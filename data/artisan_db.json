@@ -1,0 +1,657 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "مهندس أحمد العوضي",
+      "email": "ahmed@artisan-space.eg",
+      "role": "super_admin",
+      "phone": "+20 100 123 4567",
+      "department": "الإدارة العليا",
+      "passwordHash": "2c430727fb8b7e4a9585ab99d4dbd86257131bf159b3252415552327b6b5529ae26b74c6ca0d99a89497e5e4ba8beba4175dcdfe3638e0f8ce3cf0d81386a60f",
+      "salt": "ca818e2a2dff0606670c0e7e4a7371b911f6745269f974bf7902890221a6d88b"
+    },
+    {
+      "id": "u2",
+      "name": "سارة محمود",
+      "email": "sara@artisan-space.eg",
+      "role": "manager",
+      "phone": "+20 109 987 6543",
+      "department": "إدارة العمليات والمبيعات",
+      "passwordHash": "185375547409927c7284ddaa52a460138a3fa9e2b2d61c3639ec227e7c885ddfc7ef2f11aa8edd27528a0fb3cc2a725aa742eaf485b78e51f72263754a6f9dbf",
+      "salt": "3efa287ffcee1b9fe11bc9b7c8b468d38eb65313f929a02b08313436ea7f920b",
+      "permissions": {
+        "canAccessCRM": true,
+        "canAccessFinance": true,
+        "canApproveQuotations": true
+      }
+    },
+    {
+      "id": "u3",
+      "name": "م. كريم الشريف",
+      "email": "kareem@artisan-space.eg",
+      "role": "pm",
+      "phone": "+20 111 222 3344",
+      "department": "إدارة المشاريع",
+      "passwordHash": "9161d2ddbeb49e030f5528ebaba28facfa518fea15b0ec597c21e008c50adc471afc71c1fc42f7b5e725c94f0de6a95cae0b5db8b4d68b16e27e7adb01006dc4",
+      "salt": "65b38a3e4d4ac66ea2b08c5ac1a974affda13a1690d9f0c4f6f60f0100d7b400"
+    },
+    {
+      "id": "u4",
+      "name": "محمود عبد الله",
+      "email": "accountant@artisan-space.eg",
+      "role": "accountant",
+      "phone": "+20 122 333 4455",
+      "department": "الإدارة المالية",
+      "passwordHash": "7136ab9cb3509b357000a7f7512eedc59269a332089f8245e7ced9a641c8c1fe48195eeb4acd82fd2f2458817c7465ceb154115bbcda6bd8a3e43b6a8205d88c",
+      "salt": "fd2b36d178878bb572b03751c5ccb94e8eee83ac4d883c735b117fa97d93b8db"
+    },
+    {
+      "id": "u5",
+      "name": "وليد حسن",
+      "email": "site@artisan-space.eg",
+      "role": "execution",
+      "phone": "+20 155 666 7788",
+      "department": "فريق التنفيذ والتشطيبات",
+      "passwordHash": "7f302be88f09341f991704722479bdf9a3bb583383eebee2bfb92268cf53e5b2476436823e88c9f05c45ae69e7c5d6ee6dac6c8a0d9e4994aa41222bd83db6af",
+      "salt": "a6d9fc79a1691bf47bb35ebd27575b93988e4867a7a18e10dc49484570fd072d"
+    },
+    {
+      "id": "u6",
+      "name": "طارق عبد العال",
+      "email": "tarek@example.com",
+      "role": "client",
+      "phone": "+20 122 555 7890",
+      "department": "بوابة العملاء",
+      "passwordHash": "31e3fc98729e1777c28c664bb7193c888c3db2af5d012d446f6c199a9ee90763b91cc6d3ba0d66448758ffea735fe0200cf24d8cca4cc667a1c15fd460b12356",
+      "salt": "1c0f9b672274f263e9e03990345e98881b1096a205f508b514b4f56fdf52c327"
+    },
+    {
+      "id": "u-1793364155975",
+      "name": "م. تامر الجندي",
+      "email": "tamer-1793364155794@artisan-space.eg",
+      "role": "pm",
+      "phone": "+20 102 333 4455",
+      "department": "إشراف المواقع المعمارية",
+      "status": "active",
+      "permissions": {
+        "canAccessCRM": false,
+        "canAccessProjects": true,
+        "canAccessQuotations": true,
+        "canAccessFinance": false,
+        "canAccessMedia": true,
+        "canAccessNews": true,
+        "canAccessUsers": false,
+        "canAccessSettings": false,
+        "canApproveQuotations": false
+      },
+      "passwordHash": "4d30489b494679909f74d14b8678e9287c6e94bfaad2bdf513a4bee3ecd1856c75f77c064a901dd0f255a4c12a98d0e8ef39b53852806c94aace9b7e62bebc78",
+      "salt": "e9971d325ff5ea726ae69faaa98b1af306b47996b69159b626c006d40265ddf6"
+    }
+  ],
+  "leads": [
+    {
+      "id": "l1",
+      "customerName": "م. طارق المنشاوي",
+      "phone": "+20 122 555 7890",
+      "email": "tarek.m@example.com",
+      "preferredContact": "whatsapp",
+      "projectType": "residential_villa",
+      "location": "الشيخ زايد، الجيزة",
+      "approxAreaSqm": 500,
+      "estimatedBudgetEgp": 1800000,
+      "scope": "تصميم داخلي وتشطيب كامل لفيلا دوبلكس",
+      "expectedStartDate": "2026-05-01",
+      "status": "site_visit",
+      "priority": "vip",
+      "assignedToUserId": "u2",
+      "nextFollowUpDate": "2026-10-22",
+      "notes": [
+        "تم الاتصال الأولي",
+        "طلب معاينة للموقع يوم الخميس القادم"
+      ],
+      "createdAt": "2026-10-15"
+    },
+    {
+      "id": "l2",
+      "customerName": "د. رانيا السعيد",
+      "phone": "+20 101 444 3322",
+      "email": "rania.s@example.com",
+      "preferredContact": "phone",
+      "projectType": "apartment",
+      "location": "مصر الجديدة، القاهرة",
+      "approxAreaSqm": 220,
+      "estimatedBudgetEgp": 650000,
+      "scope": "تجديد وتصميم ريسبشن ومطبخ",
+      "expectedStartDate": "2026-06-15",
+      "status": "quotation_prepared",
+      "priority": "high",
+      "assignedToUserId": "u2",
+      "nextFollowUpDate": "2026-10-23",
+      "notes": [
+        "تم إرسال المقايسة المبدئية عبر الواتساب"
+      ],
+      "createdAt": "2026-10-17"
+    },
+    {
+      "id": "l3",
+      "customerName": "أستاذ سامح ممدوح",
+      "phone": "+20 115 999 8877",
+      "email": "sameh.m@example.com",
+      "preferredContact": "email",
+      "projectType": "commercial_office",
+      "location": "التجمع الخامس، القاهرة الجديدة",
+      "approxAreaSqm": 350,
+      "estimatedBudgetEgp": 950000,
+      "scope": "تشطيب مقر شركة برمجيات",
+      "expectedStartDate": "2026-07-01",
+      "status": "new",
+      "priority": "medium",
+      "assignedToUserId": "u2",
+      "nextFollowUpDate": "2026-10-20",
+      "notes": [
+        "طلب تقديم عرض سعر تفصيلي للشركات"
+      ],
+      "createdAt": "2026-10-19"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c1",
+      "name": "م. طارق المنشاوي",
+      "phone": "+20 122 555 7890",
+      "email": "tarek.m@example.com",
+      "address": "الشيخ زايد، فيلا 42",
+      "totalProjects": 1,
+      "createdAt": "2026-01-10"
+    },
+    {
+      "id": "c2",
+      "name": "أ. هالة فؤاد",
+      "phone": "+20 100 888 9911",
+      "email": "hala.f@example.com",
+      "address": "المقطم، قصر النخيل",
+      "totalProjects": 1,
+      "createdAt": "2025-08-15"
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr1",
+      "projectNumber": "PRJ-2026-001",
+      "name": "تشطيب قصر فؤاد - المقطم",
+      "customerId": "c2",
+      "customerName": "أ. هالة فؤاد",
+      "address": "المقطم، قصر النخيل، عمارة 12",
+      "scope": "تشطيب داخلي بالكامل وديكورات كلاسيكية فاخرة",
+      "projectManagerId": "u3",
+      "startDate": "2026-02-01",
+      "targetCompletionDate": "2026-12-01",
+      "status": "in_progress",
+      "contractValueEgp": 3500000,
+      "actualExpensesEgp": 1450000,
+      "progressPercentage": 45,
+      "notes": "تم الانتهاء من أعمال التأسيس والكهرباء والبدء في الدهانات.",
+      "imageCover": "/images/portfolio_villa_new_cairo_1792469679890.jpg"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "pr1",
+      "title": "تكسير وتجهيز المسارات المعمارية",
+      "assignedTo": "فريق التأسيس",
+      "dueDate": "2026-02-15",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "id": "t2",
+      "projectId": "pr1",
+      "title": "تمديد مواسير السباكة وكابلات الكهرباء السويدي",
+      "assignedTo": "م. وليد حسن",
+      "dueDate": "2026-03-01",
+      "status": "completed",
+      "priority": "urgent"
+    },
+    {
+      "id": "t3",
+      "projectId": "pr1",
+      "title": "تركيب الأسقف المعلقة وتوزيع الإضاءة المودرن",
+      "assignedTo": "فني الأسقف",
+      "dueDate": "2026-04-10",
+      "status": "in_progress",
+      "priority": "normal"
+    },
+    {
+      "id": "t4",
+      "projectId": "pr1",
+      "title": "أعمال البورسلين والرخام الإيطالي للأرضيات",
+      "assignedTo": "فريق الرخام",
+      "dueDate": "2026-05-20",
+      "status": "pending",
+      "priority": "high"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "q1",
+      "quotationNumber": "QT-2026-042",
+      "leadId": "l2",
+      "customerId": "c1",
+      "customerName": "د. رانيا السعيد",
+      "issueDate": "2026-10-18",
+      "expiryDate": "2026-11-18",
+      "currency": "EGP",
+      "status": "sent",
+      "paymentTerms": "30% مقدم، 40% خلال التنفيذ، 30% عند الاستلام",
+      "notes": "تشمل المقايسة كافة المواد والعمالة والإشراف الهندسي.",
+      "preparedBy": "سارة محمود",
+      "currentVersionIndex": 0,
+      "versions": [
+        {
+          "versionNumber": 1,
+          "createdAt": "2026-10-18",
+          "subtotalEgp": 580000,
+          "taxRate": 14,
+          "taxAmountEgp": 81200,
+          "discountEgp": 11200,
+          "grandTotalEgp": 650000,
+          "items": [
+            {
+              "id": "qi1",
+              "description": "أعمال التأسيس والكهرباء والسباكة",
+              "quantity": 220,
+              "unit": "م٢",
+              "unitPriceEgp": 800,
+              "discountPercentage": 0,
+              "totalEgp": 176000
+            },
+            {
+              "id": "qi2",
+              "description": "تصميم وتنفيذ الأسقف المعلقة والجبس بورد",
+              "quantity": 220,
+              "unit": "م٢",
+              "unitPriceEgp": 650,
+              "discountPercentage": 5,
+              "totalEgp": 135850
+            },
+            {
+              "id": "qi3",
+              "description": "أرضيات بورسلين إيطالي فاخر",
+              "quantity": 180,
+              "unit": "م٢",
+              "unitPriceEgp": 1200,
+              "discountPercentage": 0,
+              "totalEgp": 216000
+            },
+            {
+              "id": "qi4",
+              "description": "دهانات وتشطيبات نهائية",
+              "quantity": 220,
+              "unit": "م٢",
+              "unitPriceEgp": 250,
+              "discountPercentage": 0,
+              "totalEgp": 55000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay1",
+      "projectId": "pr1",
+      "projectName": "تشطيب قصر فؤاد - المقطم",
+      "customerId": "c2",
+      "customerName": "أ. هالة فؤاد",
+      "amountEgp": 1050000,
+      "paymentDate": "2026-02-05",
+      "method": "bank_transfer",
+      "referenceNumber": "CIB-TRX-998231",
+      "notes": "دفعة المقدم (30%)"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp1",
+      "projectId": "pr1",
+      "projectName": "تشطيب قصر فؤاد - المقطم",
+      "category": "materials",
+      "description": "شراء حديد وأسمنت ومواد تأسيس",
+      "amountEgp": 450000,
+      "expenseDate": "2026-02-10",
+      "supplierName": "شركة النيل لمواد البناء"
+    },
+    {
+      "id": "exp2",
+      "projectId": "pr1",
+      "projectName": "تشطيب قصر فؤاد - المقطم",
+      "category": "labor",
+      "description": "أجور عمال البناء والسباكة لشهر فبراير",
+      "amountEgp": 120000,
+      "expenseDate": "2026-02-28",
+      "supplierName": "مقاول الباطن - سيد عمار"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "p1",
+      "slug": "modern-villa-new-cairo",
+      "title": {
+        "ar": "فيلا بيل ويو - التجمع الخامس",
+        "en": "Bell Vue Villa - New Cairo"
+      },
+      "category": "villas",
+      "location": "التجمع الخامس، القاهرة الجديدة",
+      "propertyType": "فيلا سكنية مستقلة (450 م٢)",
+      "description": {
+        "ar": "تصميم وتنفيد داخلي بأسلوب المعاصرة الحديثة مع استخدام الرخام الإيطالي وألواح الخشب الطبيعي وإضاءات ليد مخفية.",
+        "en": "Contemporary interior design and execution featuring Italian marble, natural wood slats, and ambient cove lighting."
+      },
+      "coverImage": "/images/portfolio_villa_new_cairo_1792469679890.jpg",
+      "galleryImages": [
+        "/images/portfolio_villa_new_cairo_1792469679890.jpg",
+        "/images/hero_interior_design_1792469679331.jpg"
+      ],
+      "completionDate": "2026-02-15",
+      "isFeatured": true,
+      "status": "published"
+    },
+    {
+      "id": "p2",
+      "slug": "smart-village-hq",
+      "title": {
+        "ar": "مقر شركة التقنية الذكية - سمارت فيليج",
+        "en": "Smart Tech HQ - Smart Village"
+      },
+      "category": "commercial",
+      "location": "سمارت فيليج، الجيزة",
+      "propertyType": "مقر إداري (800 م٢)",
+      "description": {
+        "ar": "تصميم بيئة عمل مفتوحة مع غرف اجتماعات زجاجية وعازلة للصوت، ومناطق استراحة عصرية للموظفين.",
+        "en": "Open-plan workspace design featuring acoustic glass meeting rooms and modern collaborative employee lounges."
+      },
+      "coverImage": "/images/portfolio_commercial_hq_1792469679674.jpg",
+      "galleryImages": [
+        "/images/portfolio_commercial_hq_1792469679674.jpg"
+      ],
+      "completionDate": "2026-01-10",
+      "isFeatured": true,
+      "status": "published"
+    },
+    {
+      "id": "p3",
+      "slug": "nile-view-penthouse-zamalek",
+      "title": {
+        "ar": "بنتهاوس كورنيش النيل - الزمالك",
+        "en": "Nile Corniche Penthouse - Zamalek"
+      },
+      "category": "penthouses",
+      "location": "الزمالك، القاهرة",
+      "propertyType": "شقة بنتهاوس فاخرة (320 م٢)",
+      "description": {
+        "ar": "إطلالة مباشرة على نهر النيل مع تصميم داخلي يجمع بين الفخامة الكلاسيكية ولمسات الأثاث المودرن.",
+        "en": "Direct Nile views with an interior design blending classic luxury and modern furniture accents."
+      },
+      "coverImage": "/images/portfolio_penthouse_zamalek_1792469679860.jpg",
+      "galleryImages": [
+        "/images/portfolio_penthouse_zamalek_1792469679860.jpg"
+      ],
+      "completionDate": "2025-11-20",
+      "isFeatured": true,
+      "status": "published"
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "slug": "interior-design",
+      "title": {
+        "ar": "التصميم الداخلي وتخطيط المساحات",
+        "en": "Interior Design & Space Planning"
+      },
+      "shortDesc": {
+        "ar": "تصاميم ثلاثية الأبعاد مخصصة تعكس ذوقك الفريد وتحقق الاستفادة القصوى من كل متر.",
+        "en": "Custom 3D spatial designs reflecting your unique taste and maximizing every square meter."
+      },
+      "fullDesc": {
+        "ar": "نقدم حلول تصميم داخلي متكاملة تشمل المخططات المعمارية، وتوزيع الإضاءة، وتنسيق الأثاث، واختيار المواد الفاخرة لتناسب الفيلات والقصور والشقق الراقية.",
+        "en": "Comprehensive interior design solutions including architectural plans, lighting, and luxury material selection."
+      },
+      "iconName": "Compass",
+      "image": "/images/hero_interior_design_1792469679331.jpg",
+      "startingPriceEgp": 45000,
+      "published": true
+    },
+    {
+      "id": "s2",
+      "slug": "turnkey-finishing",
+      "title": {
+        "ar": "التشطيبات الفاخرة وتسليم مفتاح",
+        "en": "Turnkey Finishing & Renovation"
+      },
+      "shortDesc": {
+        "ar": "تنفيذ كافة أعمال الأرضيات، والأسقف المعلقة، والدهانات، والسباكة بأعلى معايير الجودة المصرية.",
+        "en": "Complete execution of flooring, suspended ceilings, painting, and plumbing with highest quality standards."
+      },
+      "fullDesc": {
+        "ar": "إشراف هندسي كامل وتنفيذ دقيق لكافة أعمال التشطيبات الداخلية والخارجية مع الالتزام التام بالجداول الزمنية والمواصفات الفنية المعتمدة.",
+        "en": "Full engineering supervision and precise execution of all finishing works."
+      },
+      "iconName": "Hammer",
+      "image": "/images/service_finishing_renovation_1792469681130.jpg",
+      "startingPriceEgp": 120000,
+      "published": true
+    },
+    {
+      "id": "s3",
+      "slug": "commercial-offices",
+      "title": {
+        "ar": "تصميم وتشطيب المقرات الإدارية والتجارية",
+        "en": "Commercial & Office Design"
+      },
+      "shortDesc": {
+        "ar": "بيئات عمل عصرية ومحفزة للإنتاجية في سمارت فيليج والعاصمة الإدارية.",
+        "en": "Modern work environments designed for productivity in Smart Village and New Capital."
+      },
+      "fullDesc": {
+        "ar": "نصمم وننفذ المكاتب الفاخرة، ومقرات الشركات، والمعارض التجارية مع دمج الهوية البصرية، وقواطع الزجاج الصوتية، وأنظمة الإضاءة الذكية.",
+        "en": "Design and execution of luxury corporate headquarters and commercial showrooms."
+      },
+      "iconName": "Building2",
+      "image": "/images/portfolio_commercial_hq_1792469679674.jpg",
+      "startingPriceEgp": 200000,
+      "published": true
+    },
+    {
+      "id": "s4",
+      "slug": "custom-joinery",
+      "title": {
+        "ar": "الأثاث المخصص والأعمال الخشبية",
+        "en": "Custom Joinery & Furniture"
+      },
+      "shortDesc": {
+        "ar": "أثاث مصمم خصيصاً لمشروعك بأيدي أمهر الحرفيين واستخدام أجود الأخشاب الطبيعية.",
+        "en": "Bespoke furniture crafted for your project by master artisans using premium natural woods."
+      },
+      "fullDesc": {
+        "ar": "ورش متكاملة لتصنيع غرف النوم، والدريسنج روم، والمطابخ، والديكورات الخشبية والبانوهات الحائطية بأعلى دقة تشطيب.",
+        "en": "Integrated workshops for custom furniture and woodwork manufacturing."
+      },
+      "iconName": "Armchair",
+      "image": "/images/portfolio_villa_new_cairo_1792469679890.jpg",
+      "startingPriceEgp": 75000,
+      "published": true
+    }
+  ],
+  "settings": {
+    "companyName": {
+      "ar": "أرتيزان آند سبيد للديكور والتصميم الداخلي",
+      "en": "Artisan & Space Interior Design"
+    },
+    "tagline": {
+      "ar": "نصنع مساحات تنبض بالفخامة والتميز في مصر",
+      "en": "Crafting Luxury Interiors & Finishes in Egypt"
+    },
+    "phone": "+20 2 3760 9988",
+    "whatsapp": "+20 100 123 4567",
+    "email": "contact@artisan-space.eg",
+    "address": {
+      "ar": "24 شارع التضامن، التجمع الخامس، القاهرة، مصر",
+      "en": "24 El-Tadamon St, New Cairo, Egypt"
+    },
+    "taxId": "392-881-004",
+    "defaultVatRate": 14,
+    "bankInfo": "البنك التجاري الدولي (CIB) - فرع التجمع - حساب رقم: 10005839201",
+    "pageControls": {
+      "showNews": false,
+      "showPortfolio": true,
+      "showServices": true,
+      "showFaq": true,
+      "announcementBarEnabled": true,
+      "announcementText": {
+        "ar": "✨ استمتع باستشارة معمارية وتصميم ثلاثي الأبعاد مجاناً عند التعاقد على تشطيبات الفيلات",
+        "en": "✨ Complimentary 3D architectural consultation for luxury villa contracts"
+      }
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "al-1793364156159-884",
+      "userId": "u1",
+      "userName": "مهندس أحمد العوضي",
+      "action": "حذف حساب موظف",
+      "details": "تم حذف حساب المستخدم مستخدم مؤقت للحذف (temp-1793364155980@test.com)",
+      "timestamp": "2026-10-30 12:42:36"
+    },
+    {
+      "id": "al-1793364156158-998",
+      "userId": "u1",
+      "userName": "مهندس أحمد العوضي",
+      "action": "إضافة مستخدم جديد",
+      "details": "تم إنشاء حساب الموظف مستخدم مؤقت للحذف بدور client وبريد temp-1793364155980@test.com",
+      "timestamp": "2026-10-30 12:42:36"
+    },
+    {
+      "id": "al-1793364155977-738",
+      "userId": "u1",
+      "userName": "مهندس أحمد العوضي",
+      "action": "تعديل بيانات وصلاحيات موظف",
+      "details": "تم تعديل بيانات الموظف سارة محمود (sara@artisan-space.eg) - الدور: manager",
+      "timestamp": "2026-10-30 12:42:35"
+    },
+    {
+      "id": "al-1793364155975-501",
+      "userId": "u1",
+      "userName": "مهندس أحمد العوضي",
+      "action": "إضافة مستخدم جديد",
+      "details": "تم إنشاء حساب الموظف م. تامر الجندي بدور pm وبريد tamer-1793364155794@artisan-space.eg",
+      "timestamp": "2026-10-30 12:42:35"
+    },
+    {
+      "id": "al-1793362249784-548",
+      "userId": "u1",
+      "userName": "مهندس أحمد",
+      "action": "تعديل صلاحية مستخدم",
+      "details": "تم تعديل دور المستخدم سارة محمود (sara@artisan-space.eg) من sales إلى manager",
+      "timestamp": "2026-10-30 12:10:49"
+    },
+    {
+      "id": "al1",
+      "userId": "u1",
+      "userName": "مهندس أحمد العوضي",
+      "action": "تسجيل دخول النظام",
+      "details": "تم تسجيل الدخول بنجاح من جهاز الآدمن الرئيسي",
+      "timestamp": "2026-10-19 09:30:00"
+    },
+    {
+      "id": "al2",
+      "userId": "u2",
+      "userName": "سارة محمود",
+      "action": "إنشاء عرض سعر",
+      "details": "تم إصدار المقايسة رقم QT-2026-042 للعميل د. رانيا السعيد",
+      "timestamp": "2026-10-18 14:20:00"
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "slug": "new-cairo-luxury-villa-award-2026",
+      "title": {
+        "ar": "أرتيزان آند سبيد تحصد جائزة التميز المعماري لتصميم قصر النرجس بالتجمع الخامس",
+        "en": "Artisan & Space Wins Architectural Excellence Award for Al-Narges Palace in New Cairo"
+      },
+      "excerpt": {
+        "ar": "تكريم فريق العمل لنيله التقدير الذهبي في توظيف الرخام الإيطالي الطبيعي والإضاءة المعمارية المخفية.",
+        "en": "Honoring our design engineering team with the Gold Award for natural Italian marble integration and ambient lighting."
+      },
+      "content": {
+        "ar": "في إنجاز يعكس التزام شركة أرتيزان آند سبيد بأعلى معايير الإتقان والفخامة في السوق المصري، حصد مشروع \"قصر النرجس\" جائزة التميز المعماري لعام 2026. تميز التصميم بالتناغم الفريد بين الخطوط الكلاسيكية الفاخرة والروح العصرية، مع توظيف العزل الصوتي والحراري المبتكر وشبكات المنازل الذكية المتكاملة.",
+        "en": "In an achievement reflecting Artisan & Space commitment to the highest standards of luxury and precision in Egypt, the Al-Narges Palace project received the 2026 Architectural Excellence Award."
+      },
+      "image": "/images/portfolio_villa_new_cairo_1792469679890.jpg",
+      "category": "awards",
+      "categoryLabel": {
+        "ar": "جوائز وفعاليات",
+        "en": "Awards & Events"
+      },
+      "author": "م. أحمد العوضي",
+      "publishedAt": "2026-10-25",
+      "isPublished": true,
+      "views": 1240
+    },
+    {
+      "id": "news-2",
+      "slug": "interior-design-trends-egypt-2026",
+      "title": {
+        "ar": "أبرز اتجاهات الديكور والتصميم الداخلي للفلل السكنية في مصر لعام 2026",
+        "en": "Top Luxury Interior Design Trends for Residential Villas in Egypt for 2026"
+      },
+      "excerpt": {
+        "ar": "دليلك الشامل لدمج الأخشاب الطبيعية، والأقمشة الترابية الدافئة، والتصميم الموفر للطاقة.",
+        "en": "Your definitive guide to integrating warm natural woods, organic earth palettes, and energy-efficient lighting."
+      },
+      "content": {
+        "ar": "يشهد عام 2026 تحولاً نوعياً في اختيارات عملاء الديكور في مصر، حيث يبرز التوجه نحو المساحات المفتوحة المدروسة صوتياً وهندسياً، واستخدام درجات البيج الرملي والرمادي الدافئ بدلاً من الأبيض الصريح. كما تزداد شعبية المطابخ المفتوحة المزودة بأحدث الأسطح البورسلانية المقاومة للحرارة والخدش.",
+        "en": "2026 marks a transformative era in luxury interior design across Egypt, embracing warm sand tones, acoustic wooden paneling, and seamless smart lighting ecosystems."
+      },
+      "image": "/images/hero_interior_design_1792469679331.jpg",
+      "category": "design_trends",
+      "categoryLabel": {
+        "ar": "اتجاهات التصميم",
+        "en": "Design Trends"
+      },
+      "author": "سارة محمود",
+      "publishedAt": "2026-10-18",
+      "isPublished": true,
+      "views": 890
+    },
+    {
+      "id": "news-3",
+      "slug": "smart-corporate-headquarters-finishing",
+      "title": {
+        "ar": "تسليم المرحلة الأولى من المقر الإداري لشركة استثمارية بالقرية الذكية",
+        "en": "Delivery of Phase 1 Smart Corporate Headquarters in Smart Village"
+      },
+      "excerpt": {
+        "ar": "إنهاء أعمال العزل الصوتي المزدوج والتشطيبات الذكية قبل الموعد التعاقدي بأسبوعين.",
+        "en": "Completion of acoustic glass partitioning and smart office infrastructure two weeks ahead of schedule."
+      },
+      "content": {
+        "ar": "أعلن قسم المشروعات التجارية بشركة أرتيزان آند سبيد عن إتمام تسليم المرحلة الأولى لمشروع المقر الإداري بالقرية الذكية بمساحة 1,200 متر مربع. شمل المشروع قاعات اجتماعات معزولة صوتياً بالكامل، وقواطع زجاجية ذكية، وأنظمة تحكم مركزية في الطاقة والتكييف.",
+        "en": "Artisan & Space commercial projects division successfully delivered Phase 1 of the corporate headquarters project in Smart Village covering 1,200 sqm."
+      },
+      "image": "/images/portfolio_commercial_hq_1792469679674.jpg",
+      "category": "projects",
+      "categoryLabel": {
+        "ar": "أخبار المشاريع",
+        "en": "Projects News"
+      },
+      "author": "م. كريم الشريف",
+      "publishedAt": "2026-10-10",
+      "isPublished": true,
+      "views": 650
+    }
+  ]
+}

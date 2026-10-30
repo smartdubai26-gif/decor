@@ -1,0 +1,765 @@
+MASTER BUILD PROMPT — PREMIUM INTERIOR DESIGN & DECORATION COMPANY PLATFORM
+
+1. ROLE AND MISSION
+
+Act as a senior full-stack software architect, UI/UX designer, frontend engineer, backend engineer, database architect, QA engineer, and DevOps specialist.
+
+Build a complete, production-oriented web platform for an existing interior design, decoration, and finishing company operating in Egypt.
+
+This must be a real, functional business application, not a static landing page, visual prototype, or collection of disconnected screens.
+
+The company name, logo, contact information, portfolio images, and final brand assets have not yet been provided. Use clearly identified, editable placeholders for missing information. Never invent real company credentials, client testimonials, completed projects, or business statistics.
+
+Your mission is to design, implement, integrate, test, and document the complete platform, including the public website, secure administration dashboard, CRM, project management, quotations, financial tracking, media management, and deployment preparation.
+
+Do not stop after presenting a plan. Inspect the existing environment, implement the application in working stages, run available checks, fix discovered issues, and report honestly what has and has not been completed.
+
+2. CORE BUSINESS OBJECTIVES
+
+The platform must:
+
+* Present the company’s services and portfolio professionally.
+* Convert visitors into qualified leads and quotation requests.
+* Help sales staff track prospects and follow up efficiently.
+* Manage customers, site visits, projects, tasks, and deadlines.
+* Generate professional quotations and retain quotation versions.
+* Track project budgets, expenses, payments, and outstanding balances.
+* Allow authorized employees to manage portfolio content.
+* Provide a secure, responsive administrative dashboard.
+* Support future growth without unnecessary architectural complexity.
+
+Primary market: Egypt.
+
+Default language: Arabic.
+
+Default layout direction: RTL.
+
+Secondary language: English, with proper LTR support.
+
+Default business currency: EGP.
+
+Architecture should allow additional currencies and tax settings to be configured when required. Do not hardcode tax rates or assume a particular tax treatment.
+
+3. BRAND IDENTITY AND VISUAL DIRECTION
+
+Create a premium modern interior design aesthetic inspired by contemporary architectural studios.
+
+Use this initial design system:
+
+* Warm ivory: #F1E9DE
+* Sand beige: #C6A780
+* Deep charcoal green: #28332F
+* Pure white: #FFFFFF
+* Neutral gray for secondary text and borders.
+
+Typography:
+
+* Choose a modern, readable Arabic font, such as IBM Plex Sans Arabic or an appropriate locally hosted alternative.
+* Use a complementary Latin font.
+* Establish a consistent type scale, spacing system, border radius, shadows, and reusable components.
+
+Visual principles:
+
+* Large, high-quality architectural and interior photography.
+* Elegant editorial layouts with generous whitespace.
+* Clear hierarchy and restrained animations.
+* Refined project cards and image galleries.
+* Accessible contrast and readable Arabic typography.
+* Premium appearance without excessive gradients, glowing effects, or unnecessary decoration.
+
+Use genuine company-provided photographs when available. Until then, use properly licensed or authorized demonstration imagery, clearly treated as replaceable demo content.
+
+Never present stock imagery as a verified company project.
+
+Create a reusable design system and a consistent component library.
+
+4. MOBILE-FIRST RESPONSIVE EXPERIENCE
+
+Design and implement mobile-first layouts for phones, tablets, laptops, and large desktop screens.
+
+Explicitly optimize for iOS Safari and Android browsers.
+
+Requirements:
+
+* Correct viewport configuration, including viewport-fit=cover where appropriate.
+* Safe-area handling for notches and home indicators.
+* No horizontal overflow or clipped content.
+* No overlapping buttons, navigation, cards, or form fields.
+* Comfortable touch targets, preferably around 44 × 44 CSS pixels or larger.
+* Input font sizes of at least 16 CSS pixels where appropriate to prevent iOS Safari auto-zoom.
+* Responsive images with appropriate dimensions and modern formats.
+* Mobile navigation that is accessible and easy to close.
+* Sticky mobile contact or WhatsApp actions only when they do not obstruct content.
+* Correct Arabic RTL alignment for navigation, forms, tables, dialogs, and dashboard controls.
+* Responsive tables that transform into readable mobile layouts or use controlled horizontal scrolling.
+* Loading, empty, validation, success, and error states for every important workflow.
+
+Test representative narrow mobile widths, including 320px, 375px, 390px, and 430px, plus tablet and desktop breakpoints.
+
+Do not simply shrink desktop layouts to fit mobile screens.
+
+5. PUBLIC WEBSITE PAGES
+
+Implement the following pages with working navigation and real data integration.
+
+A. Home Page
+
+Include:
+
+* Premium hero section with an architectural image.
+* Editable company name, headline, and introduction.
+* Primary calls to action: View Projects and Request a Quote.
+* Featured services.
+* Selected portfolio projects.
+* Company capabilities and process.
+* Real, configurable business metrics only when verified data exists.
+* Testimonials only when genuine testimonials are supplied.
+* Frequently asked questions.
+* Contact section and footer.
+* Mobile-friendly WhatsApp contact link using a configurable business number.
+
+B. About Us
+
+Include the company’s introduction, mission, working process, capabilities, and verified experience.
+
+Make all content editable through the administration dashboard.
+
+C. Services
+
+Support configurable service categories such as:
+
+* Interior design and space planning.
+* Residential decoration.
+* Commercial interior design.
+* Complete finishing and renovation.
+* Custom furniture and joinery.
+* Decorative wall panels and wall finishes.
+* Marble-look and wood-look decorative solutions.
+* Lighting and material selection.
+
+Each service must have a detail page with descriptions, optional images, related projects, and a quotation CTA.
+
+Administrators must be able to add, edit, reorder, publish, and archive services.
+
+D. Portfolio
+
+Create a filterable project gallery.
+
+Each project should support:
+
+* Project title and slug.
+* Project category.
+* Location, when approved for publication.
+* Property type.
+* Description and design concept.
+* Cover image and image gallery.
+* Before-and-after comparisons when available.
+* Project status and completion date, where appropriate.
+* Featured-project flag.
+* SEO title and description.
+* Draft, published, and archived states.
+
+Provide individual project detail pages and attractive mobile image viewing.
+
+E. Request a Quote
+
+Build a validated, multi-step quotation request form with:
+
+1. Customer name.
+2. Phone number.
+3. Email, optional where appropriate.
+4. Preferred contact method.
+5. Project type.
+6. Project location in Egypt.
+7. Approximate property area.
+8. Project scope.
+9. Estimated budget range.
+10. Expected start date.
+11. Additional notes.
+12. Optional reference-image or document uploads.
+
+Allow users to review their submission before sending.
+
+Provide clear validation messages in Arabic.
+
+Protect the endpoint against spam, abuse, oversized uploads, and duplicate submissions.
+
+After successful submission, show a confirmation page and a reference number.
+
+Create a corresponding lead in the CRM. Do not expose internal customer records or uploaded private files publicly.
+
+F. Contact Page
+
+Include configurable phone numbers, email addresses, WhatsApp, business hours, approved address details, and social links.
+
+Do not invent company contact information.
+
+G. Legal and Privacy Pages
+
+Provide editable privacy policy and terms templates appropriate for review before publication. Do not claim legal compliance without proper review.
+
+6. SECURE ADMINISTRATION DASHBOARD
+
+Create a dedicated, protected admin area with a professional responsive interface.
+
+The dashboard must display useful operational metrics based on actual database records.
+
+Include:
+
+* New leads and leads awaiting follow-up.
+* Upcoming site visits and appointments.
+* Active and delayed projects.
+* Quotations awaiting approval.
+* Revenue and payment summaries based on recorded financial data.
+* Recent activities and actionable reminders.
+
+Support date filters and appropriate loading, empty, and error states.
+
+Never display fabricated statistics.
+
+Role-Based Access Control
+
+Implement server-enforced role-based access control.
+
+Initial roles:
+
+* Super Administrator.
+* Company Manager.
+* Sales Representative.
+* Project Manager.
+* Accountant.
+* Execution Team Member.
+
+Define granular permissions for reading, creating, editing, publishing, exporting, and deleting relevant records.
+
+Apply authorization checks on every protected server endpoint and sensitive object operation. Hiding a button in the frontend is not authorization.
+
+Prevent users from accessing another employee’s restricted records when data access is limited by assignment.
+
+Use secure authentication, protected sessions, logout, password reset, account recovery, and appropriate session expiration.
+
+If MFA is supported by the selected authentication infrastructure, provide it as an additional security option.
+
+Never store plaintext passwords.
+
+7. CUSTOMER RELATIONSHIP MANAGEMENT (CRM)
+
+Implement a complete customer and lead management module.
+
+Lead Management
+
+Lead statuses:
+
+* New.
+* Contacted.
+* Qualified.
+* Site Visit Scheduled.
+* Quotation Prepared.
+* Negotiation.
+* Won.
+* Lost.
+
+Allow authorized administrators to configure the workflow if necessary.
+
+Each lead should contain:
+
+* Unique lead identifier.
+* Customer details.
+* Lead source.
+* Requested service.
+* Project location and estimated budget.
+* Assigned employee.
+* Current status.
+* Priority.
+* Next follow-up date.
+* Notes and activity history.
+* Related appointments, quotations, and projects.
+
+Provide searchable lists, filtering, sorting, pagination, and a Kanban pipeline.
+
+Support internal notes and dated follow-up activities.
+
+Detect likely duplicate leads using normalized phone numbers and other appropriate matching fields. Warn users before creating duplicates rather than silently merging unrelated customers.
+
+When a lead is marked Won, provide a controlled workflow to create a customer project and retain the relationship to the original lead and quotation.
+
+When marked Lost, optionally capture a loss reason.
+
+8. PROJECT MANAGEMENT
+
+Implement a project management module linked to customers and quotations.
+
+Each project should support:
+
+* Unique project number.
+* Project name.
+* Customer.
+* Project address and property details.
+* Scope of work.
+* Assigned project manager.
+* Start date and target completion date.
+* Project status.
+* Agreed contract value.
+* Budget and actual expenses.
+* Tasks and milestones.
+* Progress records.
+* Attachments and photographs.
+* Internal notes.
+* Customer-facing update fields where explicitly enabled.
+
+Initial project statuses:
+
+* Planned.
+* Awaiting Start.
+* In Progress.
+* On Hold.
+* Completed.
+* Cancelled.
+
+Allow authorized staff to create tasks with owners, due dates, priority, status, and descriptions.
+
+Display project timelines and upcoming deadlines.
+
+Calculate project progress from a documented rule, such as completed weighted tasks, or use explicitly recorded progress updates. Do not invent progress percentages.
+
+Flag overdue tasks and projects using real dates and statuses.
+
+Maintain a history of important changes.
+
+9. QUOTATIONS AND ESTIMATES
+
+Build a professional quotation management system.
+
+Each quotation should include:
+
+* Unique quotation number.
+* Customer and related lead or project.
+* Issue date and expiry date.
+* Currency.
+* Itemized products or services.
+* Description, quantity, unit, unit price, and discount.
+* Configurable taxes where applicable.
+* Subtotal, discounts, tax total, and grand total.
+* Payment terms.
+* Scope, exclusions, assumptions, and notes.
+* Prepared-by information.
+* Version number.
+* Status and approval history.
+
+Quotation statuses:
+
+* Draft.
+* Pending Internal Approval.
+* Sent.
+* Accepted.
+* Rejected.
+* Expired.
+* Cancelled.
+
+Implement accurate monetary calculations using decimal-safe arithmetic, not floating-point calculations for financial totals.
+
+Validate calculations on the server. Never trust client-submitted totals.
+
+Keep immutable snapshots of issued quotation versions. Editing a draft must not silently change an already issued quotation.
+
+Generate professional Arabic PDFs with correct RTL layout, appropriate font embedding, company branding, itemized tables, totals, and terms.
+
+Ensure PDF rendering handles Arabic shaping and text direction correctly.
+
+Provide printable output and secure quotation sharing. Do not expose quotations through guessable public URLs.
+
+If online customer acceptance is implemented, use secure, expiring tokens and record the acceptance event. Do not represent an electronic acceptance workflow as legally sufficient without appropriate review.
+
+10. FINANCIAL TRACKING
+
+Provide operational project-finance features, without pretending the platform is a complete statutory accounting system.
+
+Include:
+
+* Project expenses.
+* Customer payments.
+* Payment methods and dates.
+* Payment references.
+* Outstanding balances.
+* Supplier or expense categories.
+* Budget-versus-actual reporting.
+* Receipts and supporting documents.
+* Payment status and audit history.
+
+Link transactions to the appropriate customer, project, and quotation.
+
+Prevent duplicate payment submissions using idempotency controls where appropriate.
+
+Use transactional database operations for related financial changes.
+
+Reconcile project contract values, recorded payments, and balances consistently.
+
+Do not hardcode tax rules. Make tax settings configurable and subject to the company’s accounting requirements.
+
+Restrict sensitive financial records to authorized roles.
+
+11. MEDIA AND DOCUMENT MANAGEMENT
+
+Implement secure management of:
+
+* Portfolio images.
+* Project progress photos.
+* Before-and-after images.
+* Customer reference uploads.
+* Quotations and PDFs.
+* Receipts and project documents.
+
+Requirements:
+
+* Private storage for confidential documents.
+* Public delivery only for explicitly published portfolio assets.
+* Short-lived signed URLs for private files where supported.
+* Server-side MIME type and file-signature validation.
+* File size and upload count limits.
+* Safe filenames and generated storage keys.
+* Image optimization and thumbnails.
+* Appropriate access checks before downloading.
+* Malware scanning where available.
+* Cleanup policies for abandoned temporary uploads.
+
+Never trust the original filename or browser-provided MIME type.
+
+12. NOTIFICATIONS AND COMMUNICATION
+
+Implement an extensible notification system for:
+
+* New lead submissions.
+* Lead follow-up reminders.
+* Upcoming appointments.
+* Overdue project tasks.
+* Quotation approval requests.
+* Quotation expiry.
+* Payment recording.
+* Important project status changes.
+
+Provide an in-app notification center with read and unread states.
+
+Use email or WhatsApp integrations only when credentials and approved providers are configured.
+
+If an external integration is unavailable, show a clear configuration status and provide a safe alternative workflow.
+
+Do not claim a message was sent unless the provider confirms the result.
+
+Use retry-safe background jobs for asynchronous notifications where supported.
+
+Avoid sending duplicate notifications for retried operations.
+
+13. DATABASE DESIGN
+
+Use a relational database, preferably PostgreSQL.
+
+Design normalized schemas with migrations and appropriate foreign keys, unique constraints, indexes, and deletion rules.
+
+Include entities such as:
+
+* users
+* roles
+* permissions
+* user_role_assignments
+* customers
+* leads
+* lead_activities
+* appointments
+* services
+* portfolio_projects
+* portfolio_images
+* projects
+* project_members
+* project_tasks
+* project_milestones
+* quotations
+* quotation_versions
+* quotation_items
+* quotation_approvals
+* payments
+* expenses
+* documents
+* notifications
+* audit_logs
+* company_settings
+
+Add join tables and supporting tables where required.
+
+Use explicit created_at and updated_at fields, appropriate timestamps, consistent timezone handling, and indexes for common search and reporting queries.
+
+Use soft deletion only where appropriate. Financial records and issued quotations must preserve necessary auditability.
+
+Use database transactions for operations that modify related records.
+
+Create seed data for development only. Clearly distinguish demo records from real business records.
+
+14. TECHNICAL ARCHITECTURE
+
+First inspect the existing repository, runtime, installed dependencies, available services, and deployment environment.
+
+Preserve working code and existing project conventions wherever practical. Do not overwrite a working project blindly.
+
+If starting from scratch, use a maintainable TypeScript architecture.
+
+Suggested stack:
+
+* Next.js and React for the web application.
+* TypeScript with strict checking.
+* Tailwind CSS and reusable accessible UI components.
+* PostgreSQL for relational data.
+* A suitable migration and database-access layer, such as Prisma or Drizzle.
+* A secure authentication solution appropriate to the hosting environment.
+* A server-side application layer with validated API endpoints.
+* Object storage for images and documents.
+* Automated tests and CI checks.
+
+Use either well-organized Next.js server functionality or a separate NestJS backend when justified by deployment or business complexity. Do not create unnecessary duplicate backend services.
+
+Keep business logic separate from UI components.
+
+Validate all API inputs using a schema-validation library such as Zod.
+
+Use environment variables or a supported secret manager for credentials.
+
+Provide a complete .env.example containing placeholder names only, never real secrets.
+
+Include database migrations, reproducible setup instructions, development commands, production build commands, and deployment documentation.
+
+Use a background worker and queue only when required for reliable asynchronous processing.
+
+15. SECURITY REQUIREMENTS
+
+Implement security appropriate for an application containing personal and financial business information.
+
+Include:
+
+* Server-side authorization on every protected resource.
+* Protection against SQL injection and unsafe query construction.
+* Output encoding and XSS defenses.
+* CSRF protection where applicable.
+* Rate limiting on login, password recovery, and public forms.
+* Secure cookie settings and session management.
+* Strong password hashing through a trusted authentication library.
+* Safe upload handling.
+* Secure CORS configuration when cross-origin requests are required.
+* Security headers and a suitable Content Security Policy.
+* Secret management with no credentials exposed to the browser.
+* Audit logs for sensitive administrative actions.
+* Backup and recovery procedures.
+* Dependency vulnerability checks.
+* Privacy-conscious logging that excludes passwords, session tokens, and unnecessary personal information.
+
+Apply data minimization and retention policies appropriate to company requirements.
+
+Do not log private customer documents or sensitive financial information.
+
+16. SEO, ACCESSIBILITY, AND PERFORMANCE
+
+Implement:
+
+* Server-rendered or statically generated public pages where appropriate.
+* Unique page titles and descriptions.
+* Canonical URLs.
+* XML sitemap and robots.txt.
+* Open Graph metadata.
+* Meaningful image alternative text.
+* Semantic HTML.
+* Keyboard-accessible navigation and dialogs.
+* Visible focus states.
+* Accessible form labels and error announcements.
+* Responsive images and lazy loading where appropriate.
+* Font optimization.
+* Route-level code splitting.
+* Pagination for large datasets.
+* Database query optimization.
+* Appropriate caching and cache invalidation.
+
+Never publicly index the admin dashboard, private customer pages, confidential documents, or internal APIs.
+
+Measure performance with available tools rather than claiming a score without testing.
+
+17. TESTING AND QUALITY ASSURANCE
+
+Create a practical testing strategy with automated and manual checks.
+
+Unit Tests
+
+Test:
+
+* Quotation arithmetic.
+* Discounts and configurable taxes.
+* Currency precision.
+* Project balance calculations.
+* Lead status transitions.
+* Role and permission checks.
+* Input validation.
+
+Integration Tests
+
+Test:
+
+* Database persistence.
+* Lead submission.
+* Customer and project creation.
+* Quotation creation and versioning.
+* Payment recording.
+* Document access authorization.
+* Notification processing.
+* Transaction rollback on failures.
+
+End-to-End Tests
+
+Cover these complete workflows:
+
+1. Visitor submits a quotation request.
+2. Lead appears in the CRM.
+3. Sales representative contacts and qualifies the lead.
+4. A site visit is scheduled.
+5. A quotation is created and approved.
+6. The quotation is sent to the customer.
+7. A winning lead is converted into a project.
+8. Tasks and milestones are managed.
+9. Payments and expenses are recorded.
+10. Project completion is documented.
+11. Authorized staff publish selected project images to the portfolio.
+
+Test permission boundaries and unauthorized access attempts.
+
+Verify Arabic RTL layouts and responsive behavior on mobile.
+
+Run available linting, type checks, unit tests, integration tests, and production builds.
+
+Fix discovered errors instead of merely listing them.
+
+Do not mark tests as passed unless they actually ran and passed.
+
+18. DEPLOYMENT AND OPERATIONS
+
+Prepare separate development, staging, and production configurations where the hosting environment supports them.
+
+Implement:
+
+* Database migrations and a documented release procedure.
+* Production environment-variable documentation.
+* HTTPS and domain configuration instructions.
+* Automated build and deployment checks.
+* Health and readiness checks.
+* Error monitoring hooks.
+* Structured operational logs.
+* Database backup and restoration instructions.
+* Storage and database retention policies.
+* Rollback guidance.
+* A post-deployment smoke-test checklist.
+
+Never run destructive production migrations or delete production data without explicit authorization and a verified backup.
+
+Do not claim deployment, domain configuration, email delivery, or live integration unless it has actually been completed and verified.
+
+19. IMPLEMENTATION WORKFLOW
+
+Follow this execution sequence.
+
+PHASE 1 — Repository Inspection and Requirements
+
+* Inspect the existing codebase and runtime.
+* Identify existing functionality, limitations, and reusable components.
+* Confirm the implementation plan and identify missing credentials or business assets.
+* Record the architecture decisions.
+
+PHASE 2 — Design System and Responsive Public Website
+
+* Establish the design tokens and reusable components.
+* Implement navigation, footer, home page, services, portfolio, project details, about, contact, and quotation form.
+* Verify Arabic RTL and mobile layouts.
+
+PHASE 3 — Database and Authentication
+
+* Implement schemas and migrations.
+* Create authentication and server-enforced authorization.
+* Seed development-only data.
+* Verify protected routes and API access.
+
+PHASE 4 — CRM and Customer Operations
+
+* Implement leads, customers, assignments, activity history, follow-ups, and appointments.
+* Connect public lead submissions to the CRM.
+
+PHASE 5 — Project Management
+
+* Implement projects, team assignments, tasks, milestones, deadlines, and project documents.
+
+PHASE 6 — Quotations and Financial Management
+
+* Implement quotation versions, item calculations, approval workflow, Arabic PDF output, expenses, payments, and reporting.
+
+PHASE 7 — Administration and Content Management
+
+* Complete portfolio, service, company settings, user management, dashboard metrics, notifications, and audit logs.
+
+PHASE 8 — Integration and Hardening
+
+* Test full workflows.
+* Fix security, data consistency, responsive UI, and performance issues.
+* Verify permissions and error handling.
+
+PHASE 9 — Production Preparation
+
+* Run migrations in the intended environment only after reviewing them.
+* Configure production settings and monitoring.
+* Document deployment and recovery.
+* Run production smoke tests when deployment access is available.
+
+20. EXECUTION RULES
+
+* Start by inspecting the available repository and tools.
+* Do not merely generate a lengthy specification and stop.
+* Implement real functionality incrementally.
+* Reuse existing infrastructure when it is appropriate.
+* Do not replace working components unnecessarily.
+* Do not fabricate APIs, credentials, database connections, test results, or deployment status.
+* Do not leave important buttons or forms as decorative placeholders.
+* Clearly label any functionality that depends on unavailable third-party credentials.
+* Use realistic development fixtures, never fake production data.
+* Keep the application maintainable and modular.
+* Prefer working end-to-end workflows over numerous incomplete features.
+* Maintain a checklist of completed, pending, blocked, and tested requirements.
+* If context or execution limits prevent completion in one run, finish the current safe task, preserve the work, document the exact remaining steps, and continue from the existing codebase rather than restarting.
+* Ask questions only when a missing decision genuinely blocks implementation. Otherwise use the documented defaults and keep configurable values editable.
+
+21. DEFINITION OF DONE
+
+The platform is ready for release only when:
+
+* Public pages are implemented and responsive.
+* Arabic RTL and English LTR layouts work correctly.
+* The quotation form saves valid submissions to the database.
+* Leads and customer records are manageable from the dashboard.
+* Projects, tasks, quotations, payments, and expenses are connected correctly.
+* Server-side role permissions are enforced.
+* Confidential documents are protected.
+* Quotation calculations and issued versions are reliable.
+* Critical automated tests pass.
+* The production build succeeds.
+* Security, backup, deployment, and recovery instructions are documented.
+* No critical workflow relies on a decorative button or unimplemented mock action.
+* All remaining blockers and unverified integrations are explicitly documented.
+
+22. FINAL REPORT
+
+At the end of each implementation run, provide a concise engineering report containing:
+
+1. Features actually implemented.
+2. Files and major components created or modified.
+3. Database schemas and migrations completed.
+4. API endpoints implemented.
+5. Tests actually executed and their results.
+6. Build and type-check status.
+7. Security and mobile checks performed.
+8. Missing credentials, business assets, or external dependencies.
+9. Known bugs and incomplete features.
+10. Exact instructions to run, test, and deploy the current version.
+11. The next concrete implementation task.
+
+Begin now by inspecting the available project environment, then execute Phase 1 and proceed with implementation as far as the environment permits.
+
+The ultimate goal is a polished, modern, mobile-first, secure, fully integrated interior design company platform that can be configured for the real business and deployed responsibly.
